@@ -1,0 +1,310 @@
+/* Color Palette
+#1F2937 - Dark navy
+#3B82F6 - Blue
+#E0F2FE - Light blue
+#F8FAFC - Light background
+#FFFFFF - White
+*/
+
+/* Global styles
+------------------------------------*/
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background-color: #F8FAFC;
+    color: #1F2937;
+    font-family: "Montserrat", Arial, sans-serif;
+    line-height: 1.6;
+    scroll-behavior: smooth;
+    scroll-padding-top: 76px;
+}
+
+.content-wrap {
+    max-width: 950px;
+    margin: 0 auto;
+    padding: 50px;
+    overflow: hidden;
+}
+
+h1,
+h2,
+h3 {
+    font-family: "Playfair Display", Georgia, serif;
+}
+
+h1 {
+    margin: 20px 0 5px;
+    font-size: 42px;
+}
+
+h2 {
+    margin-top: 0;
+    font-size: 30px;
+}
+
+h3 {
+    margin-top: 30px;
+    font-size: 22px;
+    color: #3B82F6;
+}
+
+li {
+    margin-bottom: 8px;
+}
+
+/* Header and Footer
+------------------------------------*/
+
+.site-nav {
+    position: fixed;
+    z-index: 10;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 14px 20px;
+    background: rgba(31, 41, 55, 0.97);
+    text-align: center;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.22);
+}
+
+.site-nav a {
+    display: inline-block;
+    margin: 0 9px;
+    color: #FFFFFF;
+    font-size: 0.83rem;
+    font-weight: 700;
+    letter-spacing: 0.04em;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.site-nav a:hover,
+.site-nav a:focus {
+    color: #93C5FD;
+}
+
+.site-nav i {
+    margin-right: 4px;
+}
+
+header {
+    padding: 130px 20px 60px;
+    text-align: center;
+    color: #FFFFFF;
+    background-color: #1F2937;
+}
+
+header img {
+    object-fit: cover;
+}
+
+header h1,
+header h2 {
+    margin: 0;
+}
+
+header h2 {
+    color: #E0F2FE;
+    font-family: "Montserrat", Arial, sans-serif;
+    font-size: 24px;
+}
+
+footer {
+    padding: 35px 20px;
+    text-align: center;
+    color: #FFFFFF;
+    background-color: #1F2937;
+}
+
+footer h2 {
+    color: #FFFFFF;
+}
+
+footer a {
+    margin: 0 8px;
+    color: #E0F2FE;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+footer a:hover {
+    color: #FFFFFF;
+    text-decoration: underline;
+}
+
+.contact-info a {
+    display: inline-block;
+    padding: 10px;
+}
+
+.contact-info i {
+    margin-right: 6px;
+    color: #93C5FD;
+}
+
+.contact-info p {
+    display: inline-block;
+    margin: 0 8px;
+    padding: 10px;
+}
+
+/* Main content
+------------------------------------*/
+
+main {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+/* Resume sections
+------------------------------------*/
+
+.work-experience,
+.academic-projects,
+.education,
+.leadership,
+.skills {
+    margin: 30px 20px;
+    padding: 30px;
+    border-left: 6px solid #3B82F6;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
+}
+
+.work-experience {
+    background-color: #E0F2FE;
+}
+
+.academic-projects {
+    background-color: #FFFFFF;
+    border-left-color: #1F2937;
+}
+
+.education {
+    background-color: #EAF4FF;
+    border-left-color: #3B82F6;
+}
+
+.leadership {
+    background-color: #DCEEFF;
+    border-left-color: #1F2937;
+}
+
+.skills {
+    background: linear-gradient(
+        rgba(241, 247, 252, 0.89),
+        rgba(224, 242, 254, 0.89)
+    ), url("../images/office-background.png") center / cover no-repeat;
+    background-attachment: fixed;
+    border-left-color: #3B82F6;
+}
+
+footer {
+    background: linear-gradient(
+        rgba(31, 41, 55, 0.88),
+        rgba(15, 23, 42, 0.94)
+    ), url("../images/office-background.png") center / cover no-repeat;
+    background-attachment: fixed;
+}
+
+/* Section headings
+------------------------------------*/
+
+section h2 {
+    color: #1F2937;
+}
+
+section h3 {
+    color: #3B82F6;
+}
+
+/* Columns
+------------------------------------*/
+
+.column-narrow {
+    width: 30%;
+    float: left;
+    padding-right: 3%;
+    min-height: 175px;
+}
+
+.column-wide {
+    width: 70%;
+    float: left;
+    min-height: 225px;
+}
+
+/* Profile image
+------------------------------------*/
+
+.profile-img {
+    border-radius: 50%;
+}
+
+/* Mobile screen adjustments
+------------------------------------*/
+
+@media (max-width: 600px) {
+    h1 {
+        font-size: 34px;
+    }
+
+    h2 {
+        font-size: 26px;
+    }
+
+    h3 {
+        font-size: 20px;
+    }
+
+    .content-wrap {
+        padding: 25px;
+    }
+
+    .site-nav {
+        padding: 10px 8px;
+    }
+
+    .site-nav a {
+        margin: 3px 5px;
+        font-size: 0.7rem;
+    }
+
+    header {
+        padding-top: 145px;
+    }
+
+    .skills,
+    footer {
+        background-attachment: scroll;
+    }
+
+    .work-experience,
+    .academic-projects,
+    .education,
+    .leadership,
+    .skills {
+        margin: 20px 12px;
+        padding: 22px;
+    }
+
+    .column-narrow,
+    .column-wide {
+        width: 100%;
+        float: none;
+        min-height: auto;
+    }
+
+    .column-narrow {
+        padding-right: 0;
+    }
+
+    .profile-img {
+        width: 180px;
+        display: block;
+        margin: 0 auto 20px;
+    }
+}
